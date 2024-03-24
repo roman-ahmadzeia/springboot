@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Created</title>
+</head>
+<body>
+<h1>Task Created Successfully!</h1>
+<a href="/tasks">Create Another Task</a>
+
+<h2>Task List:</h2>
+<ul>
+    <!-- Loop through tasks and display each task's name -->
+    <li th:each="task : ${tasks}" th:text="${task.name}"></li>
+</ul>
+</body>
+</html>
